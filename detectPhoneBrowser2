@@ -1,0 +1,15 @@
+ <?php
+
+$iphone = stristr($_SERVER['HTTP_USER_AGENT'],"iPhone");
+$android = stristr($_SERVER['HTTP_USER_AGENT'],"Android");
+$palmpre = stristr($_SERVER['HTTP_USER_AGENT'],"webOS");
+$berry = stristr($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+$ipod = stristr($_SERVER['HTTP_USER_AGENT'],"iPod");
+$nokia = stristr($_SERVER['HTTP_USER_AGENT'],"Nokia");
+
+if ($iphone || $android || $palmpre || $ipod || $berry || $nokia == true)
+{
+    echo "You are browsing from handphone";
+}
+
+?>
